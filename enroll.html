@@ -9,17 +9,32 @@
 </head>
 <body>
 
-    <header class="social-navbar-container">
-        <div class="nav-left-branding">
-            <div class="logo-card">
-                <img src="images/logo.jpg" alt="Athogram Logo" class="custom-logo">
-                <span class="brand-text"><a href="index.html" style="color:inherit; text-decoration:none;">Athogram</a></span>
-            </div>
+ <header class="social-navbar-container">
+    <div class="nav-left-branding">
+        <div class="logo-card">
+            <img src="images/logo.jpg" alt="Athogram Logo" class="custom-logo">
+            <span class="brand-text"><a href="index.html">Athogram</a></span>
         </div>
-        <div class="nav-right-actions">
-            <a href="index.html" class="back-link">← Return to Base</a>
-        </div>
-    </header>
+    </div>
+    
+    <button class="hamburger-btn" aria-label="Toggle Menu">
+        <span></span><span></span><span></span>
+    </button>
+
+    <div class="nav-right-actions">
+        <a href="index.html" class="back-link">← Return to Base</a>
+    </div>
+</header>
+
+<div class="mobile-menu-overlay" id="mobile-menu">
+    <button class="close-menu-btn" id="close-menu"></button>
+    <div class="mobile-nav-links">
+        <a href="index.html">Home</a>
+        <a href="social.html">Social & Feed</a>
+        <a href="features.html">Features</a>
+        <a href="vision.html">Our Vision</a>
+    </div>
+</div>
 
     <main class="split-waitlist-container">
         
