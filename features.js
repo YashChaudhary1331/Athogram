@@ -47,4 +47,34 @@ document.addEventListener('DOMContentLoaded', () => {
     }, spyOptions);
 
     sections.forEach(section => spyObserver.observe(section));
+
+    // ==========================================
+    // 5. GLASSMORPHIC MOBILE MENU & X-ANIMATION
+    // ==========================================
+    const hamburger = document.querySelector('.hamburger-btn');
+    const mobileMenu = document.getElementById('mobile-menu');
+    const closeMenuBtn = document.getElementById('close-menu');
+    const menuLinks = document.querySelectorAll('.mobile-nav-links a, .mobile-sign-up');
+
+    if (hamburger && mobileMenu && closeMenuBtn) {
+        
+        // Handle opening/closing
+        const toggleMenu = () => {
+            mobileMenu.classList.toggle('active');
+            hamburger.classList.toggle('active'); // Triggers the X animation
+            document.body.style.overflow = mobileMenu.classList.contains('active') ? 'hidden' : ''; 
+        };
+
+        hamburger.addEventListener('click', toggleMenu);
+
+        // Handle closing
+        const closeMenu = () => {
+            mobileMenu.classList.remove('active');
+            hamburger.classList.remove('active'); // Reverts to hamburger
+            document.body.style.overflow = '';
+        };
+
+        closeMenuBtn.addEventListener('click', closeMenu);
+        menuLinks.forEach(link => link.addEventListener('click', closeMenu));
+    }
 });

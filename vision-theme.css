@@ -597,3 +597,124 @@ a { text-decoration: none; color: inherit; }
         text-align: center;
     }
 }
+
+/* =========================================
+   MOBILE MENU & HAMBURGER (Matches Global Style)
+========================================= */
+/* Hamburger Icon */
+.hamburger-btn {
+    display: none;
+    flex-direction: column;
+    justify-content: space-around;
+    width: 30px;
+    height: 25px;
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    z-index: 1000;
+}
+
+.hamburger-btn span {
+    width: 30px;
+    height: 3px;
+    background: var(--white);
+    border-radius: 10px;
+    transition: all 0.3s linear;
+    transform-origin: 1px; /* Important for the smooth X animation */
+}
+
+/* Hamburger to X Animation on Click */
+.hamburger-btn.active span:nth-child(1) {
+    transform: rotate(45deg);
+}
+.hamburger-btn.active span:nth-child(2) {
+    opacity: 0;
+}
+.hamburger-btn.active span:nth-child(3) {
+    transform: rotate(-45deg);
+}
+
+/* Full Screen Glassmorphic Overlay */
+.mobile-menu-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background: rgba(17, 17, 17, 0.95);
+    backdrop-filter: blur(15px);
+    z-index: 999;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    pointer-events: none;
+    transition: all 0.4s ease;
+}
+
+.mobile-menu-overlay.active {
+    opacity: 1;
+    pointer-events: auto; /* Fixed for Safari */
+}
+
+/* Close X Button */
+.close-menu-btn {
+    position: absolute;
+    top: 30px;
+    right: 5%;
+    background: transparent;
+    border: none;
+    color: var(--white);
+    font-size: 3rem;
+    cursor: pointer;
+    line-height: 1;
+    z-index: 1001;
+}
+
+/* Mobile Links & Typography */
+.mobile-nav-links {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    text-align: center;
+}
+
+.mobile-nav-links a {
+    color: var(--white);
+    font-size: 1.5rem;
+    font-weight: 700;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.mobile-nav-links a:hover {
+    color: var(--accent);
+}
+
+/* Mobile Sign Up Button Styling */
+.mobile-sign-up {
+    background: transparent;
+    border: 2px solid var(--primary);
+    padding: 10px 25px;
+    border-radius: 30px;
+    font-size: 1.2rem;
+    font-weight: 700;
+    color: var(--primary);
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.mobile-sign-up:hover {
+    background: var(--primary);
+    color: var(--white);
+}
+
+@media (max-width: 950px) {
+    .hamburger-btn {
+        display: flex;
+    }
+    .nav-right-actions {
+        display: none; /* Hides the desktop links on mobile */
+    }
+}

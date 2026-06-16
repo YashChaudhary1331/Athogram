@@ -189,5 +189,49 @@
                 </div>
             </div>
         </footer>
+
+        <div class="mobile-menu-overlay" id="mobile-menu">
+        <button class="close-menu-btn" id="close-menu">&times;</button>
+        <div class="mobile-nav-links">
+            <a href="index.html">Home</a>
+            <a href="social.html">Social & Feed</a>
+            <a href="features.html">Features</a>
+            <!-- <a href="vision.html">Our Vision</a> -->
+            <a href="enroll.html" style="text-decoration: none;">
+                <button class="nav-btn mobile-sign-up text-primary">Sign Up</button>
+            </a>
+        </div>
+    </div>
+
+
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const hamburger = document.querySelector('.hamburger-btn');
+            const mobileMenu = document.getElementById('mobile-menu');
+            const closeMenuBtn = document.getElementById('close-menu');
+            const menuLinks = document.querySelectorAll('.mobile-nav-links a, .mobile-sign-up');
+
+            if (hamburger && mobileMenu && closeMenuBtn) {
+                // Handle opening/closing
+                const toggleMenu = () => {
+                    mobileMenu.classList.toggle('active');
+                    hamburger.classList.toggle('active');
+                    document.body.style.overflow = mobileMenu.classList.contains('active') ? 'hidden' : ''; 
+                };
+
+                hamburger.addEventListener('click', toggleMenu);
+
+                // Handle closing
+                const closeMenu = () => {
+                    mobileMenu.classList.remove('active');
+                    hamburger.classList.remove('active');
+                    document.body.style.overflow = '';
+                };
+
+                closeMenuBtn.addEventListener('click', closeMenu);
+                menuLinks.forEach(link => link.addEventListener('click', closeMenu));
+            }
+        });
+    </script>
 </body>
 </html>
