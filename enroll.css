@@ -1,0 +1,569 @@
+/* =========================================
+   ATHOGRAM WAITLIST (Rose Canvas Theme)
+========================================= */
+:root {
+    /* The New Master Background */
+    --main-bg: #Ac4463;
+
+    /* Inverted Primary: Dark elements to contrast against the rose */
+    --primary: #111111;
+    --accent: #feed02;
+    --text-main: #ffffff;
+    --text-muted: rgba(255, 255, 255, 0.8);
+
+    /* Dark frosted glass for all cards and inputs */
+    --panel-bg: rgba(17, 17, 17, 0.6);
+    --panel-border: rgba(255, 255, 255, 0.15);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+
+body {
+    background-color: var(--main-bg);
+    color: var(--text-main);
+    min-height: 100vh;
+    overflow-x: hidden;
+    display: flex;
+    flex-direction: column;
+}
+
+/* =========================================
+   NAVIGATION BAR
+========================================= */
+.social-navbar-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 25px 5%;
+    border-bottom: 1px solid var(--panel-border);
+    z-index: 100;
+}
+
+.logo-card {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    /* background: var(--panel-bg); */
+    padding: 8px 15px;
+    border-radius: 12px;
+    border: 1px solid var(--panel-border);
+}
+
+.custom-logo {
+    width: 35px;
+    height: 35px;
+    border-radius: 8px;
+    object-fit: cover;
+}
+
+.brand-text {
+    font-size: 1.5rem;
+    font-weight: 900;
+    letter-spacing: -1px;
+    text-transform: uppercase;
+}
+
+.back-link {
+    color: var(--text-main);
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 0.9rem;
+    opacity: 0.8;
+    transition: 0.3s;
+}
+
+.back-link:hover {
+    opacity: 1;
+    color: var(--accent);
+}
+
+/* =========================================
+   SPLIT LAYOUT CORE
+========================================= */
+.split-waitlist-container {
+    display: flex;
+    flex: 1;
+    width: 100%;
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 40px 5%;
+    align-items: center;
+    justify-content: space-between;
+    gap: 50px;
+}
+
+/* --- LEFT SIDE: CONTENT --- */
+.waitlist-content {
+    flex: 1;
+    max-width: 600px;
+}
+
+.system-status {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 0.75rem;
+    font-weight: 800;
+    letter-spacing: 2px;
+    color: var(--accent);
+    margin-bottom: 30px;
+    text-transform: uppercase;
+}
+
+.dot {
+    width: 8px;
+    height: 8px;
+    background: var(--accent);
+    border-radius: 50%;
+    box-shadow: 0 0 10px var(--accent);
+}
+
+.active {
+    animation: blink 1.5s infinite;
+}
+
+@keyframes blink {
+
+    0%,
+    100% {
+        opacity: 1;
+    }
+
+    50% {
+        opacity: 0.3;
+    }
+}
+
+.headline {
+    font-size: 4.5rem;
+    font-weight: 900;
+    line-height: 1.05;
+    letter-spacing: -2px;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+}
+
+.subheadline {
+    font-size: 2rem;
+    font-weight: 800;
+    color: var(--text-muted);
+    letter-spacing: -0.5px;
+    margin-bottom: 40px;
+}
+
+/* Re-mapped to Yellow since background is Rose */
+.text-accent {
+    color: var(--accent);
+}
+
+/* =========================================
+   COMPREHENSIVE FORM GRID SYSTEM
+========================================= */
+.elite-grid-form {
+    width: 100%;
+    max-width: 550px;
+    background: var(--panel-bg);
+    padding: 30px;
+    border-radius: 20px;
+    border: 1px solid var(--panel-border);
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
+}
+
+.form-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 25px 20px;
+}
+
+.input-group.full-width {
+    grid-column: span 2;
+}
+
+.input-group {
+    position: relative;
+    width: 100%;
+}
+
+.input-group label {
+    display: block;
+    font-size: 0.7rem;
+    font-weight: 800;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    color: var(--text-muted);
+    margin-bottom: 5px;
+    transition: color 0.3s;
+}
+
+.input-group input,
+.input-group select {
+    width: 100%;
+    background: transparent;
+    border: none;
+    border-bottom: 2px solid var(--panel-border);
+    padding: 10px 0;
+    font-size: 1.05rem;
+    color: var(--text-main);
+    font-weight: 600;
+    outline: none;
+    transition: all 0.3s ease;
+    border-radius: 0;
+}
+
+/* Customizing Dropdowns */
+.input-group select {
+    cursor: pointer;
+    appearance: none;
+    -webkit-appearance: none;
+    background-image: url("data:image/svg+xml;charset=US-ASCII,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%22292.4%22%20height%3D%22292.4%22%3E%3Cpath%20fill%3D%22%23ffffff%22%20d%3D%22M287%2069.4a17.6%2017.6%200%200%200-13-5.4H18.4c-5%200-9.3%201.8-12.9%205.4A17.6%2017.6%200%200%200%200%2082.2c0%205%201.8%209.3%205.4%2012.9l128%20127.9c3.6%203.6%207.8%205.4%2012.8%205.4s9.2-1.8%2012.8-5.4L287%2095c3.5-3.5%205.4-7.8%205.4-12.8%200-5-1.9-9.2-5.5-12.8z%22%2F%3E%3C%2Fsvg%3E");
+    background-repeat: no-repeat;
+    background-position: right 5px top 50%;
+    background-size: 10px auto;
+}
+
+/* Customizing Dropdowns */
+.input-group select {
+    cursor: pointer;
+    appearance: none;
+    -webkit-appearance: none;
+    background-image: url("data:image/svg+xml;charset=US-ASCII,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%22292.4%22%20height%3D%22292.4%22%3E%3Cpath%20fill%3D%22%23ffffff%22%20d%3D%22M287%2069.4a17.6%2017.6%200%200%200-13-5.4H18.4c-5%200-9.3%201.8-12.9%205.4A17.6%2017.6%200%200%200%200%2082.2c0%205%201.8%209.3%205.4%2012.9l128%20127.9c3.6%203.6%207.8%205.4%2012.8%205.4s9.2-1.8%2012.8-5.4L287%2095c3.5-3.5%205.4-7.8%205.4-12.8%200-5-1.9-9.2-5.5-12.8z%22%2F%3E%3C%2Fsvg%3E");
+    background-repeat: no-repeat;
+    background-position: right 5px top 50%;
+    background-size: 10px auto;
+}
+
+/* THE FIX: Replaced var(--primary) with a rich, dark burgundy */
+.input-group select option { 
+    background: #4A1728; 
+    color: #ffffff; 
+    font-weight: 600;
+}
+
+.input-group input::placeholder { color: rgba(255, 255, 255, 0.3); font-weight: 500; }
+
+/* Neon Interaction Lines */
+.focus-line {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background: var(--accent);
+    transition: width 0.4s cubic-bezier(0.86, 0, 0.07, 1);
+}
+
+.input-group input:focus~.focus-line,
+.input-group select:focus~.focus-line {
+    width: 100%;
+    box-shadow: 0 0 10px rgba(254, 237, 2, 0.4);
+}
+
+.input-group input:focus+label,
+.input-group select:focus+label {
+    color: var(--accent);
+}
+
+
+/* =========================================
+   "CYBER-LOCK" TIER SELECTOR (Pill Group)
+========================================= */
+.tier-selector {
+    display: flex;
+    gap: 12px;
+    margin-top: 15px;
+}
+
+.tier-selector input[type="radio"] {
+    display: none;
+}
+
+.tier-btn {
+    flex: 1;
+    text-align: center;
+    padding: 14px 10px;
+    background: rgba(0, 0, 0, 0.4);
+    border: 1px solid rgba(255, 255, 255, 0.05);
+    border-radius: 10px;
+    color: rgba(255, 255, 255, 0.4);
+    font-size: 0.8rem;
+    font-weight: 800;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    cursor: pointer;
+    position: relative;
+    transition: all 0.3s cubic-bezier(0.25, 1, 0.5, 1);
+    box-shadow: inset 0 2px 5px rgba(0, 0, 0, 0.5);
+}
+
+.tier-btn:hover {
+    background: rgba(255, 255, 255, 0.1);
+    color: var(--text-main);
+    box-shadow: none;
+    transform: translateY(-1px);
+}
+
+.tier-selector input[type="radio"]:checked+.tier-btn {
+    background: var(--accent);
+    color: #000000;
+    border: 1px solid var(--accent);
+    transform: translateY(-3px) scale(1.02);
+    box-shadow:
+        0 10px 20px rgba(254, 237, 2, 0.15),
+        0 0 15px rgba(254, 237, 2, 0.6),
+        inset 0 -3px 0 rgba(0, 0, 0, 0.25);
+    animation: lockIn 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+@keyframes lockIn {
+    0% {
+        transform: scale(0.95) translateY(0);
+        box-shadow: none;
+    }
+
+    50% {
+        transform: scale(1.05) translateY(-5px);
+        box-shadow: 0 0 25px var(--accent);
+    }
+
+    100% {
+        transform: scale(1.02) translateY(-3px);
+    }
+}
+
+
+/* =========================================
+   SUBMIT BUTTON
+========================================= */
+.btn-enroll {
+    width: 100%;
+    padding: 20px;
+    background: var(--primary);
+    /* Dark button on rose background */
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    color: #ffffff;
+    font-size: 1.1rem;
+    font-weight: 900;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    cursor: pointer;
+    position: relative;
+    border-radius: 8px;
+    margin-top: 35px;
+    transition: transform 0.3s, box-shadow 0.3s, background 0.3s;
+}
+
+.btn-enroll:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.4);
+    background: #222222;
+}
+
+.status-msg {
+    margin-top: 15px;
+    font-size: 0.9rem;
+    font-weight: 600;
+    text-align: center;
+}
+
+
+/* =========================================
+   RIGHT SIDE: 3D VISUALS (Adapted to Rose BG)
+========================================= */
+.waitlist-visual {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    perspective: 1200px;
+}
+
+.perspective-box {
+    position: relative;
+    width: 350px;
+    height: 550px;
+}
+
+/* Floating App Animation - Shifted to Dark Gradient */
+.floating-app-card {
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(145deg, var(--primary), #2a0b14);
+    border-radius: 30px;
+    padding: 2px;
+    transform: rotateY(-15deg) rotateX(5deg);
+    animation: float 6s ease-in-out infinite;
+    box-shadow: -20px 30px 60px rgba(0, 0, 0, 0.6);
+}
+
+@keyframes float {
+
+    0%,
+    100% {
+        transform: rotateY(-15deg) rotateX(5deg) translateY(0px);
+    }
+
+    50% {
+        transform: rotateY(-18deg) rotateX(8deg) translateY(-20px);
+    }
+}
+
+.card-glass-layer {
+    background: rgba(17, 17, 17, 0.85);
+    backdrop-filter: blur(20px);
+    border-radius: 28px;
+    width: 100%;
+    height: 100%;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    border: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+/* Internal Card UI */
+.card-top {
+    margin-bottom: 40px;
+    text-align: center;
+}
+
+.jersey-number {
+    font-size: 5rem;
+    font-weight: 900;
+    color: var(--accent);
+    line-height: 1;
+    margin-bottom: 10px;
+}
+
+.player-name {
+    font-size: 1.2rem;
+    font-weight: 800;
+    letter-spacing: 2px;
+}
+
+.card-stats {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 40px;
+}
+
+.stat-box {
+    text-align: center;
+    font-size: 1.5rem;
+    font-weight: 800;
+}
+
+.stat-box span {
+    font-size: 0.7rem;
+    color: var(--text-muted);
+    letter-spacing: 1px;
+    display: block;
+    margin-bottom: 5px;
+}
+
+.stat-box.highlight {
+    color: var(--accent);
+}
+
+.card-graph {
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+    height: 120px;
+    gap: 10px;
+    padding: 20px;
+    background: rgba(255, 255, 255, 0.03);
+    border-radius: 15px;
+}
+
+.bar {
+    flex: 1;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 5px 5px 0 0;
+}
+
+.highlight-bar {
+    background: var(--accent);
+    box-shadow: 0 0 15px rgba(254, 237, 2, 0.5);
+}
+
+/* Shadow Underneath (Darkened for Rose BG) */
+.shadow-plate {
+    position: absolute;
+    bottom: -30px;
+    left: 10%;
+    width: 80%;
+    height: 30px;
+    background: radial-gradient(ellipse at center, rgba(0, 0, 0, 0.4) 0%, transparent 70%);
+    border-radius: 50%;
+    animation: shadowPulse 6s ease-in-out infinite;
+}
+
+@keyframes shadowPulse {
+
+    0%,
+    100% {
+        transform: scale(1);
+        opacity: 0.6;
+    }
+
+    50% {
+        transform: scale(0.8);
+        opacity: 0.3;
+    }
+}
+
+/* =========================================
+   RESPONSIVE DESIGN
+========================================= */
+@media (max-width: 1024px) {
+    .split-waitlist-container {
+        flex-direction: column;
+        text-align: center;
+        padding-top: 60px;
+    }
+
+    .headline {
+        font-size: 3.5rem;
+    }
+
+    .waitlist-content {
+        margin-bottom: 50px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .system-status {
+        justify-content: center;
+    }
+
+    .waitlist-visual {
+        transform: scale(0.8);
+    }
+}
+
+@media (max-width: 768px) {
+    .tier-selector {
+        flex-direction: column;
+        gap: 10px;
+    }
+}
+
+@media (max-width: 650px) {
+    .form-grid {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+
+    .input-group.full-width {
+        grid-column: span 1;
+    }
+
+    .elite-grid-form {
+        padding: 20px;
+    }
+}

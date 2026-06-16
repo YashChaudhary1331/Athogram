@@ -1,0 +1,710 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Athogram | Athlete Social & Live Feed</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="social.css">
+</head>
+
+<body>
+
+    <main class="full-body-layout">
+
+        <header class="social-navbar-container">
+            <div class="nav-left-branding">
+                <div class="bento-card logo-card bg-purple">
+                    <img src="images/logo.jpg" alt="Athogram Logo" class="custom-logo">
+                    <span class="brand-text"><a href="index.html" style="color:inherit; text-decoration:none;">Athogram</a></span>
+                </div>
+            </div>
+            <button class="hamburger-btn" aria-label="Toggle Menu">
+                <span></span><span></span><span></span>
+            </button>
+
+            <div class="nav-right-actions">
+                <nav class="top-nav">
+                    <div class="nav-links">
+                        <a href="social.html" class="active-nav">Social & Feed</a>
+                        <a href="features.html">Features</a>
+                        <a href="vision.html">Our Vision</a>
+                    </div>
+                    <a href="enroll.html">
+                        <button class="nav-btn">Enroll Now</button>
+                    </a>
+                </nav>
+            </div>
+        </header>
+
+        <section class="feed-filter-section">
+            <span class="kinetic-badge">⚡ LIVE SPORTS HUB</span>
+            <div class="filter-row">
+                <button class="filter-pill active" data-sport="athletics">TRACK & FIELD</button>
+                <button class="filter-pill" data-sport="cricket">CRICKET PRO</button>
+                <button class="filter-pill" data-sport="football">FOOTBALL</button>
+                <button class="filter-pill" data-sport="ai">AI INSIGHTS</button>
+            </div>
+        </section>
+
+        <div class="feed-workspace-grid">
+
+            <div class="feed-left-stream">
+                
+                <div class="feed-card glass-panel" data-category="athletics">
+                    <div class="card-glow"></div>
+                    <div class="feed-card-header">
+                        <div class="athlete-profile">
+                            <div class="avatar-box bg-accent">🏃‍♂️</div>
+                            <div class="profile-details">
+                                <h3>Arjun Sharma</h3>
+                                <span class="verified-tag">⬢ NSRS LEVEL 1 VERIFIED</span>
+                            </div>
+                        </div>
+                        <span class="post-time-badge">2m ago</span>
+                    </div>
+                    <div class="feed-card-body">
+                        <div class="post-inner-split">
+                            <div class="post-text-block">
+                                <p class="post-narrative">Clocked a personal best of 10.24s in the 100m sprint trials this morning at the SAI elite camp. Workloads are leveling fine, ready to push intensity scaling tomorrow.</p>
+                                <div class="session-tag-row">
+                                    <span class="session-chip">#SprintTrials</span><span class="session-chip text-accent">#PR_Broken</span>
+                                </div>
+                            </div>
+                            <div class="post-visual-chart bg-dark-translucent">
+                                <span class="chart-title">SESSION VELOCITY CURVE (m/s)</span>
+                                <div class="mini-bar-chart">
+                                    <div class="chart-bar-wrapper"><div class="bar" style="height: 45%;"></div><span class="bar-lbl">0-20m</span></div>
+                                    <div class="chart-bar-wrapper"><div class="bar" style="height: 75%;"></div><span class="bar-lbl">60m</span></div>
+                                    <div class="chart-bar-wrapper"><div class="bar peak" style="height: 98%;"></div><span class="bar-lbl">80m</span></div>
+                                    <div class="chart-bar-wrapper"><div class="bar" style="height: 85%;"></div><span class="bar-lbl">100m</span></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card-metric-subpanel bg-dark">
+                            <div class="subpanel-stat"><span class="lbl">ACWR STATUS</span><span class="val text-accent">1.18 (Optimal)</span></div>
+                            <div class="subpanel-stat"><span class="lbl">BURNOUT RISK</span><span class="val">Low (8%)</span></div>
+                            <div class="subpanel-stat"><span class="lbl">MAX VELOCITY</span><span class="val">11.6 m/s</span></div>
+                        </div>
+                    </div>
+                    <div class="feed-card-footer">
+                        <button class="interaction-btn clap-btn">⚡ <span>142</span> Claps</button>
+                    </div>
+                </div>
+
+                <div class="feed-card glass-panel" data-category="athletics">
+                    <div class="feed-card-header">
+                        <div class="athlete-profile">
+                            <div class="avatar-box bg-accent">👟</div>
+                            <div class="profile-details">
+                                <h3>Neha Outlines</h3>
+                                <span class="verified-tag">⬢ ELITE MID-DISTANCE</span>
+                            </div>
+                        </div>
+                        <span class="post-time-badge">45m ago</span>
+                    </div>
+                    <div class="feed-card-body">
+                        <div class="post-inner-split">
+                            <div class="post-text-block">
+                                <p class="post-narrative">800m lactate threshold pacing session complete. Held a sustained tempo output across intervals without hitting premature systemic fatiguing thresholds.</p>
+                                <div class="session-tag-row"><span class="session-chip">#Threshold</span><span class="session-chip">#VO2Max</span></div>
+                            </div>
+                            <div class="post-visual-chart bg-dark-translucent">
+                                <span class="chart-title">HEART RATE STEADY METRIC</span>
+                                <div class="mini-bar-chart">
+                                    <div class="chart-bar-wrapper"><div class="bar" style="height: 70%;"></div><span class="bar-lbl">Lap 1</span></div>
+                                    <div class="chart-bar-wrapper"><div class="bar peak" style="height: 92%;"></div><span class="bar-lbl">Lap 2</span></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card-metric-subpanel bg-dark">
+                            <div class="subpanel-stat"><span class="lbl">AVG HR</span><span class="val">168 bpm</span></div>
+                            <div class="subpanel-stat"><span class="lbl">RECOVERY INDEX</span><span class="val text-accent">Excellent</span></div>
+                        </div>
+                    </div>
+                    <div class="feed-card-footer"><button class="interaction-btn clap-btn">⚡ <span>89</span> Claps</button></div>
+                </div>
+
+                <div class="feed-card glass-panel" data-category="athletics">
+                    <div class="feed-card-header">
+                        <div class="athlete-profile">
+                            <div class="avatar-box bg-accent">🎯</div>
+                            <div class="profile-details">
+                                <h3>Rohan Das (Javelin)</h3>
+                                <span class="verified-tag">⬢ NATIONAL JUNIOR RECORD</span>
+                            </div>
+                        </div>
+                        <span class="post-time-badge">2h ago</span>
+                    </div>
+                    <div class="feed-card-body">
+                        <p class="post-narrative">Biomechanical vector tracking isolated a 4-degree breakdown at my final foot-plant extension block. Readjusted entry speeds to save shoulder leverage load allocations.</p>
+                        <div class="card-metric-subpanel bg-dark">
+                            <div class="subpanel-stat"><span class="lbl">RELEASE ANGLE</span><span class="val text-accent">34.2°</span></div>
+                            <div class="subpanel-stat"><span class="lbl">PEAK FORCE</span><span class="val">4.1 kN</span></div>
+                        </div>
+                    </div>
+                    <div class="feed-card-footer"><button class="interaction-btn clap-btn">⚡ <span>211</span> Claps</button></div>
+                </div>
+
+                <div class="feed-card glass-panel" data-category="athletics">
+                    <div class="feed-card-header">
+                        <div class="athlete-profile">
+                            <div class="avatar-box bg-accent">🪵</div>
+                            <div class="profile-details">
+                                <h3>Ananya Roy</h3>
+                                <span class="verified-tag">⬢ LONG JUMP PRO</span>
+                            </div>
+                        </div>
+                        <span class="post-time-badge">5h ago</span>
+                    </div>
+                    <div class="feed-card-body">
+                        <p class="post-narrative">Approach cadence testing. Switched from a 16-step to an 18-step acceleration cycle to max out horizontal velocity before vertical launch transitions.</p>
+                    </div>
+                    <div class="feed-card-footer"><button class="interaction-btn clap-btn">⚡ <span>54</span> Claps</button></div>
+                </div>
+
+
+                <div class="feed-card glass-panel" data-category="cricket">
+                    <div class="feed-card-header">
+                        <div class="athlete-profile">
+                            <div class="avatar-box bg-purple">🏏</div>
+                            <div class="profile-details">
+                                <h3>Kabir Mehta</h3>
+                                <span class="verified-tag">⬢ IP RECRUIT DEPLOYMENT</span>
+                            </div>
+                        </div>
+                        <span class="post-time-badge">12m ago</span>
+                    </div>
+                    <div class="feed-card-body">
+                        <div class="post-inner-split">
+                            <div class="post-text-block">
+                                <p class="post-narrative">Power hitting block targets against structural spin lines. Generating clean bat-speed ratios out of an anchored base stance setup.</p>
+                                <div class="session-tag-row"><span class="session-chip">#PowerHitting</span><span class="session-chip">#T20Metrics</span></div>
+                            </div>
+                            <div class="post-visual-chart bg-dark-translucent">
+                                <span class="chart-title">WAGON WHEEL RATIO (%)</span>
+                                <div class="mini-bar-chart">
+                                    <div class="chart-bar-wrapper"><div class="bar" style="height: 80%;"></div><span class="bar-lbl">Off</span></div>
+                                    <div class="chart-bar-wrapper"><div class="bar peak" style="height: 95%;"></div><span class="bar-lbl">Leg</span></div>
+                                    <div class="chart-bar-wrapper"><div class="bar" style="height: 30%;"></div><span class="bar-lbl">V</span></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card-metric-subpanel bg-dark">
+                            <div class="subpanel-stat"><span class="lbl">BAT SPEED</span><span class="val text-accent">88.4 mph</span></div>
+                            <div class="subpanel-stat"><span class="lbl">IMPACT EFFICIENCY</span><span class="val">94%</span></div>
+                        </div>
+                    </div>
+                    <div class="feed-card-footer"><button class="interaction-btn clap-btn">⚡ <span>304</span> Claps</button></div>
+                </div>
+
+                <div class="feed-card glass-panel" data-category="cricket">
+                    <div class="feed-card-header">
+                        <div class="athlete-profile">
+                            <div class="avatar-box bg-purple">🔴</div>
+                            <div class="profile-details">
+                                <h3>Vikram Malhotra</h3>
+                                <span class="verified-tag">⬢ FIRST CLASS PACER</span>
+                            </div>
+                        </div>
+                        <span class="post-time-badge">1h ago</span>
+                    </div>
+                    <div class="feed-card-body">
+                        <p class="post-narrative">Spoke workload logs. Delivered 24 high-intensity overs over a two-day simulation block. Spine loading rates remained steady within safe standard metrics.</p>
+                        <div class="card-metric-subpanel bg-dark">
+                            <div class="subpanel-stat"><span class="lbl">AVG VELOCITY</span><span class="val">138.5 kph</span></div>
+                            <div class="subpanel-stat"><span class="lbl">RELEASE GYRO</span><span class="val text-accent">Stable</span></div>
+                        </div>
+                    </div>
+                    <div class="feed-card-footer"><button class="interaction-btn clap-btn">⚡ <span>112</span> Claps</button></div>
+                </div>
+
+                <div class="feed-card glass-panel" data-category="cricket">
+                    <div class="feed-card-header">
+                        <div class="athlete-profile">
+                            <div class="avatar-box bg-purple">🧤</div>
+                            <div class="profile-details">
+                                <h3>Siddharth Desai</h3>
+                                <span class="verified-tag">⬢ WICKETKEEPER ACADEMY</span>
+                            </div>
+                        </div>
+                        <span class="post-time-badge">4h ago</span>
+                    </div>
+                    <div class="feed-card-body">
+                        <p class="post-narrative">Reaction matrix tracking. Drills capturing rapid lateral stance movements against unpredictable bounce variants out of rough tracking footprints.</p>
+                    </div>
+                    <div class="feed-card-footer"><button class="interaction-btn clap-btn">⚡ <span>76</span> Claps</button></div>
+                </div>
+
+                <div class="feed-card glass-panel" data-category="cricket">
+                    <div class="feed-card-header">
+                        <div class="athlete-profile">
+                            <div class="avatar-box bg-purple">🏏</div>
+                            <div class="profile-details">
+                                <h3>Riya Sharma</h3>
+                                <span class="verified-tag">⬢ WOMEN'S DOMESTIC CIRCUIT</span>
+                            </div>
+                        </div>
+                        <span class="post-time-badge">1d ago</span>
+                    </div>
+                    <div class="feed-card-body">
+                        <p class="post-narrative">Completed high-volume aerobic conditioning intervals. Keeping cardiovascular fitness baselines high ahead of zonal tournaments next week.</p>
+                    </div>
+                    <div class="feed-card-footer"><button class="interaction-btn clap-btn">⚡ <span>190</span> Claps</button></div>
+                </div>
+
+
+                <div class="feed-card glass-panel" data-category="football">
+                    <div class="feed-card-header">
+                        <div class="athlete-profile">
+                            <div class="avatar-box bg-primary">⚽</div>
+                            <div class="profile-details">
+                                <h3>Daniel Gomes</h3>
+                                <span class="verified-tag">⬢ WINGER PRO SPECT</span>
+                            </div>
+                        </div>
+                        <span class="post-time-badge">18m ago</span>
+                    </div>
+                    <div class="feed-card-body">
+                        <div class="post-inner-split">
+                            <div class="post-text-block">
+                                <p class="post-narrative">High-intensity interval sprints tracking data. Logged high-end zone 5 metrics during counter-attacking simulation blocks today.</p>
+                                <div class="session-tag-row"><span class="session-chip">#HIIT</span><span class="session-chip">#GPS_Tracking</span></div>
+                            </div>
+                            <div class="post-visual-chart bg-dark-translucent">
+                                <span class="chart-title">DISTANCE BY VELOCITY METRIC</span>
+                                <div class="mini-bar-chart">
+                                    <div class="chart-bar-wrapper"><div class="bar" style="height: 30%;"></div><span class="bar-lbl">Jog</span></div>
+                                    <div class="chart-bar-wrapper"><div class="bar" style="height: 60%;"></div><span class="bar-lbl">Run</span></div>
+                                    <div class="chart-bar-wrapper"><div class="bar peak" style="height: 90%;"></div><span class="bar-lbl">Sprint</span></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card-metric-subpanel bg-dark">
+                            <div class="subpanel-stat"><span class="lbl">TOTAL DISTANCE</span><span class="val">9.4 km</span></div>
+                            <div class="subpanel-stat"><span class="lbl">SPRINT COUNT</span><span class="val text-accent">32 reps</span></div>
+                        </div>
+                    </div>
+                    <div class="feed-card-footer"><button class="interaction-btn clap-btn">⚡ <span>98</span> Claps</button></div>
+                </div>
+
+                <div class="feed-card glass-panel" data-category="football">
+                    <div class="feed-card-header">
+                        <div class="athlete-profile">
+                            <div class="avatar-box bg-primary">🛡️</div>
+                            <div class="profile-details">
+                                <h3>Tsering Lepcha</h3>
+                                <span class="verified-tag">⬢ CENTER BACK PROTOCOL</span>
+                            </div>
+                        </div>
+                        <span class="post-time-badge">3h ago</span>
+                    </div>
+                    <div class="feed-card-body">
+                        <p class="post-narrative">Positioning structure maps. Maintained clean physical recovery distances and vertical spacing constraints across zonal press triggers.</p>
+                        <div class="card-metric-subpanel bg-dark">
+                            <div class="subpanel-stat"><span class="lbl">PASS ACCURACY</span><span class="val text-accent">91.4%</span></div>
+                            <div class="subpanel-stat"><span class="lbl">INTERCEPTIONS</span><span class="val">7 clean</span></div>
+                        </div>
+                    </div>
+                    <div class="feed-card-footer"><button class="interaction-btn clap-btn">⚡ <span>114</span> Claps</button></div>
+                </div>
+
+                <div class="feed-card glass-panel" data-category="football">
+                    <div class="feed-card-header">
+                        <div class="athlete-profile">
+                            <div class="avatar-box bg-primary">🧤</div>
+                            <div class="profile-details">
+                                <h3>Gurpreet Singh</h3>
+                                <span class="verified-tag">⬢ GOALKEEPER SYSTEM</span>
+                            </div>
+                        </div>
+                        <span class="post-time-badge">6h ago</span>
+                    </div>
+                    <div class="feed-card-body">
+                        <p class="post-narrative">Explosive power testing out of set stances. Monitored lateral jump distribution profiles to improve far-post cross protection zones.</p>
+                    </div>
+                    <div class="feed-card-footer"><button class="interaction-btn clap-btn">⚡ <span>82</span> Claps</button></div>
+                </div>
+
+                <div class="feed-card glass-panel" data-category="football">
+                    <div class="feed-card-header">
+                        <div class="athlete-profile">
+                            <div class="avatar-box bg-primary">⚽</div>
+                            <div class="profile-details">
+                                <h3>Zara Khan</h3>
+                                <span class="verified-tag">⬢ MIDFIELD ENGINE</span>
+                            </div>
+                        </div>
+                        <span class="post-time-badge">1d ago</span>
+                    </div>
+                    <div class="feed-card-body">
+                        <p class="post-narrative">Completed tactical rotation runs. Focusing on half-turn tracking to speed up progressive line breaks during possession sequences.</p>
+                    </div>
+                    <div class="feed-card-footer"><button class="interaction-btn clap-btn">⚡ <span>245</span> Claps</button></div>
+                </div>
+
+
+                <div class="feed-card glass-panel" data-category="ai">
+                    <div class="feed-card-header">
+                        <div class="athlete-profile">
+                            <div class="avatar-box bg-dark-ai">🧠</div>
+                            <div class="profile-details">
+                                <h3 class="text-accent">ATHOGRAM AI ENGINE</h3>
+                                <span class="verified-tag text-white">ANOMALY SYSTEM DISCOVERY</span>
+                            </div>
+                        </div>
+                        <span class="post-time-badge system-live-pulse">● SYSTEM LIVE</span>
+                    </div>
+                    <div class="feed-card-body">
+                        <div class="post-inner-split">
+                            <div class="post-text-block">
+                                <p class="post-narrative">System analysis flagged sudden structural correlation drops across 45 onboarded sub-junior track runners in the Western district. Sleep patterns drop below 6.2 hours average. Recommended protocol adjustments dispatched to camp coaching dashboards.</p>
+                                <div class="session-tag-row">
+                                    <span class="session-chip ai-tag">#ClusterDelta</span>
+                                    <span class="session-chip ai-tag">#SleepArchitecture</span>
+                                </div>
+                            </div>
+                            <div class="post-visual-chart bg-dark-translucent ai-matrix-border">
+                                <span class="chart-title text-accent">CRITICAL ANOMALY WEIGHTS</span>
+                                <div class="mini-bar-chart">
+                                    <div class="chart-bar-wrapper"><div class="bar ai-bar" style="height: 35%;"></div><span class="bar-lbl">Base</span></div>
+                                    <div class="chart-bar-wrapper"><div class="bar ai-bar" style="height: 60%;"></div><span class="bar-lbl">Var</span></div>
+                                    <div class="chart-bar-wrapper"><div class="bar ai-bar peak-ai" style="height: 95%;"></div><span class="bar-lbl">DROP</span></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card-metric-subpanel bg-dark">
+                            <div class="subpanel-stat"><span class="lbl">CONFIDENCE SCORE</span><span class="val text-accent">98.4%</span></div>
+                            <div class="subpanel-stat"><span class="lbl">NODE DENSITY</span><span class="val">4,200/sec</span></div>
+                            <div class="subpanel-stat"><span class="lbl">SEVERITY LEVEL</span><span class="val text-white">Tier 2</span></div>
+                        </div>
+                    </div>
+                    <div class="feed-card-footer">
+                        <button class="interaction-btn clap-btn">⚡ <span>95</span> Acknowledgments</button>
+                    </div>
+                </div>
+
+                <div class="feed-card glass-panel" data-category="ai">
+                    <div class="feed-card-header">
+                        <div class="athlete-profile">
+                            <div class="avatar-box bg-dark-ai">📈</div>
+                            <div class="profile-details">
+                                <h3 class="text-accent">PREDICTIVE STRESS AGENT</h3>
+                                <span class="verified-tag text-white">ACWR AUTOMATED FORECAST</span>
+                            </div>
+                        </div>
+                        <span class="post-time-badge">PROG_RUN_22</span>
+                    </div>
+                    <div class="feed-card-body">
+                        <div class="post-inner-split">
+                            <div class="post-text-block">
+                                <p class="post-narrative">High loading trajectory alarm triggered for Cricket Roster Subset B. Combined metric velocity trends indicate a high localized injury risk profile within 72 workout hours if current metrics continue without reduction targets.</p>
+                                <div class="session-tag-row">
+                                    <span class="session-chip ai-tag">#InjuryVector</span>
+                                    <span class="session-chip ai-tag">#SpikeAlert</span>
+                                </div>
+                            </div>
+                            <div class="post-visual-chart bg-dark-translucent ai-matrix-border">
+                                <span class="chart-title text-accent">RISK PROBABILITY TIMELINE</span>
+                                <div class="mini-bar-chart">
+                                    <div class="chart-bar-wrapper"><div class="bar ai-bar" style="height: 20%;"></div><span class="bar-lbl">24h</span></div>
+                                    <div class="chart-bar-wrapper"><div class="bar ai-bar" style="height: 55%;"></div><span class="bar-lbl">48h</span></div>
+                                    <div class="chart-bar-wrapper"><div class="bar ai-bar peak-ai" style="height: 88%;"></div><span class="bar-lbl">72h</span></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card-metric-subpanel bg-dark">
+                            <div class="subpanel-stat"><span class="lbl">TRAJECTORY MATCH</span><span class="val text-accent">87.1%</span></div>
+                            <div class="subpanel-stat"><span class="lbl">AFFECTED RECRUITS</span><span class="val">14 Athletes</span></div>
+                        </div>
+                    </div>
+                    <div class="feed-card-footer">
+                        <button class="interaction-btn clap-btn">⚡ <span>150</span> Dynamic Rules Set</button>
+                    </div>
+                </div>
+
+                <div class="feed-card glass-panel" data-category="ai">
+                    <div class="feed-card-header">
+                        <div class="athlete-profile">
+                            <div class="avatar-box bg-dark-ai">🧬</div>
+                            <div class="profile-details">
+                                <h3 class="text-accent">BIOMETRIC OPTIMIZER</h3>
+                                <span class="verified-tag text-white">AUTONOMIC CALIBRATION LINK</span>
+                            </div>
+                        </div>
+                        <span class="post-time-badge">COMPUTE_DONE</span>
+                    </div>
+                    <div class="feed-card-body">
+                        <div class="post-inner-split">
+                            <div class="post-text-block">
+                                <p class="post-narrative">Cross-analyzing sleep architecture with heart rate variability (HRV) recoveries. Identified a distinct performance window shift favoring targeted midday systemic resets for elite multi-sport sprinter blocks.</p>
+                                <div class="session-tag-row">
+                                    <span class="session-chip ai-tag">#HRV_Delta</span>
+                                    <span class="session-chip ai-tag">#CircadianShift</span>
+                                </div>
+                            </div>
+                            <div class="post-visual-chart bg-dark-translucent ai-matrix-border">
+                                <span class="chart-title text-accent">OPTIMIZATION INDEX</span>
+                                <div class="mini-bar-chart">
+                                    <div class="chart-bar-wrapper"><div class="bar ai-bar" style="height: 40%;"></div><span class="bar-lbl">Deep</span></div>
+                                    <div class="chart-bar-wrapper"><div class="bar ai-bar" style="height: 45%;"></div><span class="bar-lbl">REM</span></div>
+                                    <div class="chart-bar-wrapper"><div class="bar ai-bar peak-ai" style="height: 90%;"></div><span class="bar-lbl">HRV</span></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card-metric-subpanel bg-dark">
+                            <div class="subpanel-stat"><span class="lbl">RESET EFFICIENCY</span><span class="val text-accent">+14.2%</span></div>
+                            <div class="subpanel-stat"><span class="lbl">COGNITIVE INDEX</span><span class="val">Optimal</span></div>
+                        </div>
+                    </div>
+                    <div class="feed-card-footer">
+                        <button class="interaction-btn clap-btn">⚡ <span>62</span> Logs Cached</button>
+                    </div>
+                </div>
+
+                <div class="feed-card glass-panel" data-category="ai">
+                    <div class="feed-card-header">
+                        <div class="athlete-profile">
+                            <div class="avatar-box bg-dark-ai">📡</div>
+                            <div class="profile-details">
+                                <h3 class="text-accent">ROSTER INTELLIGENCE</h3>
+                                <span class="verified-tag text-white">NSRS VERIFICATION RADAR</span>
+                            </div>
+                        </div>
+                        <span class="post-time-badge">BATCH_108</span>
+                    </div>
+                    <div class="feed-card-body">
+                        <div class="post-inner-split">
+                            <div class="post-text-block">
+                                <p class="post-narrative">Verified 18 new track metrics profiles from regional high-performance hubs. Data streams comply with ecosystem structural standards and have been linked securely to premium recruiter views.</p>
+                                <div class="session-tag-row">
+                                    <span class="session-chip ai-tag">#NSRS_Data</span>
+                                    <span class="session-chip ai-tag">#RecruiterLink</span>
+                                </div>
+                            </div>
+                            <div class="post-visual-chart bg-dark-translucent ai-matrix-border">
+                                <span class="chart-title text-accent">PARSING COMPLIANCE</span>
+                                <div class="mini-bar-chart">
+                                    <div class="chart-bar-wrapper"><div class="bar ai-bar peak-ai" style="height: 100%;"></div><span class="bar-lbl">Integ</span></div>
+                                    <div class="chart-bar-wrapper"><div class="bar ai-bar peak-ai" style="height: 100%;"></div><span class="bar-lbl">Sync</span></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card-metric-subpanel bg-dark">
+                            <div class="subpanel-stat"><span class="lbl">VALIDATION STATUS</span><span class="val text-accent">AUTHENTICATED</span></div>
+                            <div class="subpanel-stat"><span class="lbl">GATEWAY LATENCY</span><span class="val">14ms</span></div>
+                        </div>
+                    </div>
+                    <div class="feed-card-footer">
+                        <button class="interaction-btn clap-btn">⚡ <span>112</span> Profiles Verified</button>
+                    </div>
+                </div>
+
+            </div>
+
+          <aside class="feed-right-sidebar">
+    <div class="sticky-sidebar-wrapper">
+        
+        <div class="instagram-style-controls">
+            <div class="control-header">
+                <div class="ig-live-ring"></div>
+                <span>LIVE IG FEED</span>
+            </div>
+            <div class="control-btn-group">
+                <button id="btn-scroll-up" class="ig-nav-btn">▲</button>
+                <button id="btn-scroll-down" class="ig-nav-btn">▼</button>
+            </div>
+        </div>
+
+        <div class="sidebar-parallax-viewport" id="sidebar-viewport">
+            <div class="sidebar-parallax-track" id="sidebar-track">
+                
+                <div class="instagram-native-card">
+                    <div class="ig-card-header">
+            
+                        <span class="ig-username">athogram.in</span>
+                        <span class="ig-time">• 2h</span>
+                    </div>
+                    <iframe src="https://www.instagram.com/p/DXZUZCBE9T5/embed/captioned/" class="kinetic-iframe" allowtransparency="true" frameborder="0" scrolling="no" allowfullscreen></iframe>
+                </div>
+
+                <div class="instagram-native-card">
+                    <div class="ig-card-header">
+                        <div class="ig-profile-pic"></div>
+                        <span class="ig-username">athogram.in</span>
+                        <span class="ig-time">• 5h</span>
+                    </div>
+                    <iframe src="https://www.instagram.com/p/C4p6l6vS2Gz/embed/captioned/" class="kinetic-iframe" allowtransparency="true" frameborder="0" scrolling="no" allowfullscreen></iframe>
+                </div>
+
+                <div class="instagram-native-card">
+                    <div class="ig-card-header">
+                        <div class="ig-profile-pic"></div>
+                        <span class="ig-username">athogram.in</span>
+                        <span class="ig-time">• 1d</span>
+                    </div>
+                    <iframe src="https://www.instagram.com/p/DV8yUW6kwYD/embed/captioned/" class="kinetic-iframe" allowtransparency="true" frameborder="0" scrolling="no" allowfullscreen></iframe>
+                </div>
+                
+            </div>
+        </div>
+
+        <div class="live-radar-card glass-panel">
+            <div class="sidebar-card-header">
+                <span class="pulse-dot bg-accent"></span>
+                <h4>LIVE RECRUITER RADAR</h4>
+            </div>
+            <p class="embed-instructions">Real-time telemetry of verified talent scouts tracking roster metrics.</p>
+            <div class="radar-activity-stream">
+                <div class="radar-row">
+                    <div class="radar-indicator sync"></div>
+                    <div class="radar-info">
+                        <span class="radar-user">IPL Talent Scout (Mumbai)</span>
+                        <span class="radar-action">Analyzed Kabir Mehta's Data</span>
+                    </div>
+                </div>
+                <div class="radar-row">
+                    <div class="radar-indicator sync"></div>
+                    <div class="radar-info">
+                        <span class="radar-user">AFI Elite Director</span>
+                        <span class="radar-action">Flagged Arjun Sharma</span>
+                    </div>
+                </div>
+            </div>
+            <div class="radar-system-load">
+                <div class="load-text-row">
+                    <span>RECRUITER BANDWIDTH UTILITY</span>
+                    <span class="text-accent">84% Capacity</span>
+                </div>
+                <div class="load-bar-bg">
+                    <div class="load-bar-fill" style="width: 84%;"></div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</aside>
+
+        </div>
+
+        <div class="cinematic-divider">
+            <div class="line left"></div>
+            <div class="icon">⬢</div>
+            <div class="line right"></div>
+        </div>
+
+<!-- ==========================================================================
+     PREMIUM REDESIGNED HERO CONVERSION SECTION
+     ========================================================================== -->
+<section class="conversion-hero-section unique-tech-variant">
+    <!-- Cybernetic Ambient Background Details -->
+    <div class="tech-grid-overlay"></div>
+    <div class="ambient-glow-core"></div>
+
+    <div class="conversion-content">
+        <div class="meta-protocol-tag">// MOBILE ECOSYSTEM GATEWAY v2.0</div>
+        
+        <h2 class="conversion-title">
+            <span class="row-solid">TRACK YOUR</span>
+            <span class="row-outline">METRICS.</span>
+            <span class="row-accent">ANYWHERE.</span>
+        </h2>
+        
+        <p class="conversion-subtitle">
+            Real-time telemetry, predictive AI, and your complete athlete social feed directly in your pocket. Do not get left behind.
+        </p>
+        
+        <!-- Premium Action Buttons -->
+     <div class="conversion-pin">
+    <button class="app-btn app-store-premium">
+        <span class="btn-meta">Download on the</span>
+        <span class="btn-main">App Store</span>
+    </button>
+    <button class="app-btn google-play-premium">
+        <span class="btn-meta">GET IT ON</span>
+        <span class="btn-main">Google Play</span>
+    </button>
+</div>
+    </div>
+
+    <!-- Interactive Visual Space with Floating Data Tags -->
+    <div class="conversion-visual-wrapper">
+        <div class="telemetry-radar-ring"></div>
+        <div class="telemetry-radar-ring secondary"></div>
+        
+        <!-- Floating Live Data Elements -->
+        <div class="live-float-chip chip-velocity">⚡ 11.6 m/s</div>
+        <div class="live-float-chip chip-hr">❤ 168 BPM</div>
+        <div class="live-float-chip chip-acwr">⬢ ACWR 1.18</div>
+
+        <!-- Your 3D Isometric Phone Mockup -->
+        <div class="mockup-container">
+            <img src="images/image-removebg-preview (3).png" alt="Athogram App 3D Mockup" class="app-mockup-img-premium">
+        </div>
+    </div>
+</section>
+       <footer class="mega-footer">
+            <div class="footer-grid">
+                <div class="footer-brand-col">
+                    <div class="footer-logo">
+                         <img src="images/logo.jpg" alt="Athogram Logo" class="custom-logo">
+                        <span class="brand-text">Athogram</span>
+                    </div>
+                    <p>Exploring the intersection of advanced biometrics, predictive AI, and elite athletic performance.
+                    </p>
+                    <div class="footer-social-links">
+                        <a href="https://twitter.com/yourhandle" target="_blank" aria-label="Twitter" class="social-btn">
+                            <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>
+                        </a>
+                        <a href="https://instagram.com/yourhandle" target="_blank" aria-label="Instagram" class="social-btn">
+                            <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.7-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zM12 16a4 4 0 110-8 4 4 0 010 8zm6.406-11.845a1.44 1.44 0 100 2.881 1.44 1.44 0 000-2.881z"/></svg>
+                        </a>
+                        <a href="https://linkedin.com/company/yourhandle" target="_blank" aria-label="LinkedIn" class="social-btn">
+                            <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+                        </a>
+                    </div>
+                </div>
+                <div class="footer-links-col">
+                    <h4>Platform</h4>
+                    <a href="#">The Engine (AI)</a>
+                    <a href="#">ACWR Tracking</a>
+                    <a href="#">NSRS Verification</a>
+                    <a href="#">Athlete Social</a>
+                </div>
+                <div class="footer-links-col">
+                    <h4>Company</h4>
+                    <a href="#">Our Vision</a>
+                    <a href="#">Roster</a>
+                    <a href="#">Careers</a>
+                    <a href="#">Contact</a>
+                </div>
+                <div class="footer-links-col">
+                    <h4>Legal</h4>
+                    <a href="#">Privacy Policy</a>
+                    <a href="#">Terms of Service</a>
+                    <a href="#">Data Security</a>
+                </div>
+            </div>
+            <div class="footer-bottom-bar">
+                <div class="copyright">
+                    &copy; 2026 Athogram Ecosystem. All rights reserved.
+                </div>
+                <div class="social-dots">
+                    <span>SYSTEM STATUS</span>
+                    <div class="dots">
+                        <span class="dot active"></span>
+                        <span class="dot"></span>
+                        <span class="dot"></span>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </main>
+
+    <script src="script.js"></script>
+    <script src="social.js"></script>
+</body>
+
+</html>

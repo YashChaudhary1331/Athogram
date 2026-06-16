@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Waitlist | Athogram</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="enroll.css">
+</head>
+<body>
+
+    <header class="social-navbar-container">
+        <div class="nav-left-branding">
+            <div class="logo-card">
+                <img src="images/logo.jpg" alt="Athogram Logo" class="custom-logo">
+                <span class="brand-text"><a href="index.html" style="color:inherit; text-decoration:none;">Athogram</a></span>
+            </div>
+        </div>
+        <div class="nav-right-actions">
+            <a href="index.html" class="back-link">← Return to Base</a>
+        </div>
+    </header>
+
+    <main class="split-waitlist-container">
+        
+        <div class="waitlist-content">
+            <div class="system-status">
+                <span class="dot active"></span> SYSTEM: ACCEPTING ROSTER
+            </div>
+            
+            <h1 class="headline">BE THE FIRST TO<br>KNOW.</h1>
+            <h2 class="subheadline">JOIN THE <span class="text-accent">WAITLIST</span></h2>
+            
+            <form id="waitlist-form" class="elite-grid-form">
+                <div class="form-grid">
+                    
+                    <div class="input-group">
+                        <label>First Name</label>
+                        <input type="text" id="firstName" required placeholder="Enter first name" autocomplete="off">
+                        <div class="focus-line"></div>
+                    </div>
+                    <div class="input-group">
+                        <label>Last Name</label>
+                        <input type="text" id="lastName" required placeholder="Enter last name" autocomplete="off">
+                        <div class="focus-line"></div>
+                    </div>
+
+                    <div class="input-group full-width">
+                        <label>Email Address</label>
+                        <input type="email" id="email" required placeholder="athlete@domain.com" autocomplete="off">
+                        <div class="focus-line"></div>
+                    </div>
+
+                    <div class="input-group">
+                        <label>Designation</label>
+                        <select id="designation" required>
+                            <option value="" disabled selected>Select Role</option>
+                            <option value="pro">Pro Athlete</option>
+                            <option value="college">College Athlete</option>
+                            <option value="highschool">High School Athlete</option>
+                            <option value="coach">Coach / Trainer</option>
+                            <option value="fan">Fan / Supporter</option>
+                        </select>
+                        <div class="focus-line"></div>
+                    </div>
+                    <div class="input-group">
+                        <label>Primary Sport</label>
+                        <select id="sport" required>
+                            <option value="" disabled selected>Select Sport</option>
+                            <option value="track">Track & Field</option>
+                            <option value="basketball">Basketball</option>
+                            <option value="soccer">Soccer / Football</option>
+                            <option value="tennis">Tennis</option>
+                            <option value="combat">Combat Sports</option>
+                            <option value="other">Other</option>
+                        </select>
+                        <div class="focus-line"></div>
+                    </div>
+
+                    <div class="input-group">
+                        <label>City</label>
+                        <input type="text" id="city" required placeholder="e.g. Los Angeles" autocomplete="off">
+                        <div class="focus-line"></div>
+                    </div>
+                    <div class="input-group">
+                        <label>Country</label>
+                        <select id="country" required>
+                            <option value="" disabled selected>Select Country</option>
+                            <option value="US">United States</option>
+                            <option value="UK">United Kingdom</option>
+                            <option value="CA">Canada</option>
+                            <option value="AU">Australia</option>
+                            <option value="IN">India</option>
+                            <option value="Other">Other</option>
+                        </select>
+                        <div class="focus-line"></div>
+                    </div>
+
+                    <div class="input-group full-width">
+                        <label>Competition Level</label>
+                        <div class="tier-selector">
+                            <input type="radio" id="tier-pro" name="compLevel" value="pro" required>
+                            <label for="tier-pro" class="tier-btn">Pro</label>
+
+                            <input type="radio" id="tier-college" name="compLevel" value="college">
+                            <label for="tier-college" class="tier-btn">College</label>
+
+                            <input type="radio" id="tier-elite" name="compLevel" value="elite">
+                            <label for="tier-elite" class="tier-btn">Elite</label>
+                        </div>
+                    </div>
+
+                    <div class="input-group full-width">
+                        <label>Instagram Handle</label>
+                        <input type="text" id="instagram" placeholder="@username (Optional)" autocomplete="off">
+                        <div class="focus-line"></div>
+                    </div>
+
+                </div>
+
+                <button type="submit" class="btn-enroll">
+                    <span class="btn-text">SECURE EARLY ACCESS</span>
+                </button>
+                <p id="status-message" class="status-msg"></p>
+            </form>
+        </div>
+
+        <div class="waitlist-visual">
+            <div class="perspective-box">
+                <div class="floating-app-card">
+                    <div class="card-glass-layer">
+                        <div class="card-top">
+                            <div class="jersey-number">17</div>
+                            <div class="player-name">ELITE ATHLETE</div>
+                        </div>
+                        <div class="card-stats">
+                            <div class="stat-box"><span>ACWR</span><br>1.2</div>
+                            <div class="stat-box highlight"><span>PEAK</span><br>98%</div>
+                            <div class="stat-box"><span>LOAD</span><br>OPT</div>
+                        </div>
+                        <div class="card-graph">
+                            <div class="bar" style="height: 40%;"></div>
+                            <div class="bar" style="height: 70%;"></div>
+                            <div class="bar highlight-bar" style="height: 100%;"></div>
+                            <div class="bar" style="height: 60%;"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="shadow-plate"></div>
+            </div>
+        </div>
+
+    </main>
+
+    <script src="enroll.js"></script>
+</body>
+</html>
